@@ -1,0 +1,197 @@
+.search-main-page{
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+}
+
+.search-filters-main{
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #ffffff;
+    box-shadow: 5px 0 10px -2px #DDDFE2;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    margin-top: 60px;
+}
+
+.srch-search-text{
+    word-break: break-word;
+    word-wrap: break-word;
+    color: #050505;
+    min-width: 0;
+    max-width: 100%;
+    font-family: inherit;
+    outline: none;
+    font-weight: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    border-bottom: 1px solid #CED0D4;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.srch-search-text h1{
+    margin: 0;
+    padding: 0;
+}
+
+.srch-filter-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.srch-filter-top-text{
+    word-break: break-word;
+    font-weight: 600;
+    word-wrap: break-word;
+    color: #050505;
+    font-size: 1.0625rem;
+    padding-bottom: 1px;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    font-family: inherit;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.srch-filter-icon-text{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    padding: 8px;
+    cursor: not-allowed;
+}
+
+.srch-filter-selected{
+    background-color: #F0F2F5;
+    border-radius: 8px;
+    cursor: default;
+}
+
+.srch-filter-icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    background-color: #E4E6EB;
+    border-radius: 50%;
+}
+
+.srch-filter-selected-icon{
+    background-color: #1877f2;
+}
+
+.search-result-main{
+    background-color: #F0F2F5;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 78%;
+    margin-left: 22%;
+    margin-top: 60px;
+    padding-bottom: 30px;
+    min-height: 100vh;
+}
+
+.srch-mid-result{
+   width: 58%;
+}
+
+.srch-border-mobile-view{
+    display: none;
+    border: 3px solid #C9CCD1;
+}
+
+.srch-filter-mobile-view{
+    display: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow-x: auto;
+    width: 90%;
+}
+
+.srch-filter-mobile-view div{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #E4E6EB;
+    cursor: not-allowed;
+    font-family: Roboto-V2, popular-symbols, lite-glyphs-outlined, lite-glyphs-filled, snaptu-symbols, NotoSansDevanagari, NotoSansMalayalam, NotoSansGujarati, NotoSansKannada, NotoSansGurmukhi, NotoSansSinhala, BengaliOTS, RobotoThaiLao, NotoSansHebrew, NotoSansKhmer, NotoSansTamil, NotoSansTelugu, NotoSansArmenian, NotoSansGeorgian, NotoSansEthiopic, NotoSansOriya, NotoSansTibetan, NotoSansCherokee, NotoSansArabic, NotoSansMyanmar, system-ui, Arial, sans-serif !important;
+    color: #050505;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    cursor: not-allowed;
+}
+
+.srch-filter-mobile-view div:first-child{
+    background-color: #1877F2;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+    .search-filters-main{
+        width: 30%;
+    }
+
+    .search-result-main{
+        width: 70%;
+        margin-left: 30%;
+    }
+    
+    .srch-mid-result{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .srch-mid-result{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .search-filters-main{
+        display: none;
+    }
+
+    .search-result-main{
+        width: 100vw;
+        margin-left: 0;
+        height: 100%;
+        background-color: #ffffff;
+    }
+
+    .srch-mid-result{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .srch-border-mobile-view{
+        display: block;
+        width: 100%;
+    }
+
+    .srch-filter-mobile-view{
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+    }
+}
+
+/*@media screen and (max-width: 430px) {
+    .srch-filter-mobile-view div:nth-child(4), .srch-filter-mobile-view div:nth-child(5){
+        display: none;
+    }
+}*/

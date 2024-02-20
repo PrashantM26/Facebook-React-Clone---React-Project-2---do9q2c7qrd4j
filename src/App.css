@@ -1,0 +1,7 @@
+.Appabc{
+    backdrop-filter: blur(1px);
+    background-color: #F3F3F4;
+    filter: grayscale(50%) blur(1px);
+    /*background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);*/
+}
